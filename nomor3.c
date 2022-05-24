@@ -1,4 +1,4 @@
-#include <stdio.c>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
@@ -17,7 +17,7 @@ int main()
 		exit(1);
 	}
 	
-	chdir("..");
+	chdir("pindahandirektori");
 
 	target = fopen("contoh.txt", "w");
 	
@@ -31,11 +31,11 @@ int main()
 	while( ( ch = fgetc(source) ) != EOF )
 		fputc(ch, target);
 	
-	chdir("pindah");
+	chdir("..");
 	if (remove("contoh.txt") == 0)
-		printf("berhasil dihapus")
+		printf("berhasil dihapus");
 	else
-		printf("penghapusan gagal")
+		printf("penghapusan gagal");
 
 	printf("file berhasil dipindah\n");
 	
