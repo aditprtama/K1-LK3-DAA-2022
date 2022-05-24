@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <fcnt1.h>
+#include <fcntl.h>
 
 int main(){
     int fd, size;
@@ -15,6 +15,6 @@ int main(){
     }
 
     size = read(fd, c, 20);
-    c[size]= '/0';
-    print("Isi file tersebut ialah: %s", c);
+    c[size]= '\0';
+    printf("Isi file tersebut ialah: %s", c);
 }
