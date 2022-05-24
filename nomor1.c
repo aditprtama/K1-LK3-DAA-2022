@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <fcnt.h>
+#include <fcnt1.h>
 
 int main(){
     int fd, size;
